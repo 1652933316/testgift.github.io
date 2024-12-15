@@ -78,13 +78,7 @@
             font-weight: bold;
         }
     </style>
-
-</head>
-
-<body>
-<!--&lt;!&ndash;更改为你朋友的头像&ndash;&gt;-->
-<canvas class="canvas" width="1820" height="905"></canvas>
-<script language="javascript">
+    <script>
 		//判断客户端设备，选择写入meta
 		function init_viewport() {
 			if (navigator.userAgent.indexOf('Android') != -1) {
@@ -121,7 +115,13 @@
 			}
 		}
 		init_viewport();
+	</script>
+</head>
 
+<body>
+<!--&lt;!&ndash;更改为你朋友的头像&ndash;&gt;-->
+<canvas class="canvas" width="1820" height="905"></canvas>
+<script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
         BirthDay = new Date("09/21/1992 00:00:00");//这个日期是可以修改的
